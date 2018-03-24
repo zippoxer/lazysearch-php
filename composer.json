@@ -1,0 +1,21 @@
+{
+    "name": "zippoxer/lazysearch",
+    "description": "A PHP client for full-text search with lazysearch",
+    "type": "library",
+    "version": "0.1.1",
+    "authors": [
+        {
+            "name": "Moshe",
+            "email": "moshe@zippo.io"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "~6.0",
+        "php": ">=5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lazysearch\\": "src/"
+        }
+    }
+}
