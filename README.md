@@ -59,8 +59,9 @@ $results = $client->people->search('davi', [
     // Highlight matched words with HTML <mark> tags. Default is false.
     'highlight' => true,
 
-    'page' => 1,
-    'hitsPerPage' => 10
+    // Pagination.
+    'page' => 2, // Default is 1.
+    'hitsPerPage' => 50 // Default is 10.
 ]);
 
 foreach($results as $person) {
