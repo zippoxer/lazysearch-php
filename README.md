@@ -16,18 +16,17 @@ $client = new Lazysearch\Client('your-api-key');
 
 $client->people->put('1', [
     'name' => 'David',
-    'age' => 31,
-    'country' => 'Jaljulia',
-    'likes' => ['PHP', 'lazysearch']
+    'age' => 35,
+    'about' => 'I like pizza.'
 ]);
 ```
 
 Search it:
 
 ```php
-$results = $client->people->search('david');
+$results = $client->people->search('pizza');
 
-foreach($results as $person) {
+foreach($results['hits'] as $person) {
     echo $person->name;
 }
 ```
@@ -64,7 +63,7 @@ $results = $client->people->search('davi', [
     'hitsPerPage' => 50 // Default is 10.
 ]);
 
-foreach($results as $person) {
+foreach($results['hits'] as $person) {
     echo $person->name;
 }
 ```

@@ -83,6 +83,6 @@ class Client
                 "code {$code}: {$errorMessage}",
                 $code);
         }
-        return json_decode($resp->getBody());
+        return json_decode($resp->getBody(), true);
     }
 }
