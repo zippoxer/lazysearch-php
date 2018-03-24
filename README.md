@@ -47,10 +47,10 @@ $results = $client->people->search('davi', [
 
     // How to sort the results? default is by _score descending (most relevant first).
     // Examples:
-    * 'age' sorts by field 'age' ascending
-    * '-age' sorts by field 'age' descending (reverse order)
-    * '-age,register_date' sorts by field 'age' descending,
-        then by field 'register_date'
+    // * 'age' sorts by field 'age' ascending
+    // * '-age' sorts by field 'age' descending (reverse order)
+    // * '-age,register_date' sorts by field 'age' descending,
+    //   then by field 'register_date'
     'sort' => 'age',
 
     // Allow a specified number of typos in the search query. Default is 0 (no typos allowed).
