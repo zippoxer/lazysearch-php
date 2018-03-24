@@ -68,4 +68,4 @@ foreach($results['hits'] as $person) {
 }
 ```
 
-For more details, see documentation at lazysearch.zippo.io
+For more details, see documentation at [lazysearch.zippo.io](http://lazysearch.zippo.io)
