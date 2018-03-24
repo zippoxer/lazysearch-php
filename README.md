@@ -34,7 +34,7 @@ foreach($results['hits'] as $person) {
 Advanced search:
 
 ```php
-$results = $client->people->search('davi', [
+$results = $client->people->search('piz', [
     // Leave empty for standard query. Other options are: 'prefix', 'phrase' and 'advanced'.
     'queryType' => 'prefix',
 
@@ -67,3 +67,5 @@ foreach($results['hits'] as $person) {
     echo $person->name;
 }
 ```
+
+For more details, see documentation at lazysearch.zippo.io
