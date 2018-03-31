@@ -1,10 +1,10 @@
-# Full-Text Search for PHP with [lazysearch](http://lazysearch.zippo.io)
+# Full-Text Search for PHP with [marco](http://marco.zippo.io)
 Empower your PHP application with powerful full-text search.
 
 ## Installation
 
 ```
-composer require zippoxer/lazysearch
+composer require zippoxer/marco
 ```
 
 ## Usage
@@ -12,7 +12,7 @@ composer require zippoxer/lazysearch
 Insert a document to folder `people`:
 
 ```php
-$client = new Lazysearch\Client('your-api-key');
+$client = new Marco\Client('your-api-key');
 
 $client->people->put('1', [
     'name' => 'David',
